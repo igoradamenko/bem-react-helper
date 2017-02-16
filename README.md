@@ -24,7 +24,7 @@ Or:
 ```jsx
 export default class Block extends Component {
   render() {
-    const classes = ['block];
+    const classes = ['block'];
     
     if (this.props.visible) classes.push('block_visible');
     if (this.props.type) classes.push(`block_type_${this.props.type}`);
