@@ -28,5 +28,8 @@
   "homepage": "https://github.com/igoradamenko/bem-react-helper#readme",
   "devDependencies": {
     "jasmine": "^2.5.3"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
