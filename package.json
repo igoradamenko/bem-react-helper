@@ -1,0 +1,29 @@
+{
+  "name": "bem-react-helper",
+  "version": "0.1.0",
+  "description": "Allows you to easily manage BEM mods & mixes in React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoradamenko/bem-react-helper.git"
+  },
+  "keywords": [
+    "bem",
+    "react",
+    "mix",
+    "modifier",
+    "class",
+    "classname",
+    "react-component",
+    "b_"
+  ],
+  "author": "Igor Adamenko <mail@igoradamenko.com> (http://igoradamenko.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igoradamenko/bem-react-helper/issues"
+  },
+  "homepage": "https://github.com/igoradamenko/bem-react-helper#readme"
+}
