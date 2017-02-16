@@ -1,6 +1,6 @@
 {
   "name": "bem-react-helper",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Allows you to easily manage BEM mods & mixes in React",
   "main": "index.js",
   "scripts": {
