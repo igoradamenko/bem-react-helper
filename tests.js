@@ -97,4 +97,15 @@ describe('bem-react-helper', function() {
       mod3: true
     })).toEqual('block__elem block__elem_mod1 block__elem_mod2_custom-val block__elem_mod3 block2 block3');
   });
+
+  it('should return block name with mods when some of them has number values or keys', function() {
+    expect(b('block', {
+      mods: {
+        1: true,
+        mod: 2
+      }
+    }, {
+      3: 4
+    })).toEqual('block block_1 block_3_4 block_mod_2');
+  });
 });

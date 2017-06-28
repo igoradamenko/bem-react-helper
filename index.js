@@ -40,5 +40,5 @@ module.exports = function(name, props, defaultMods) {
 };
 
 function camelToKebab(str) {
-  return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+  return str.toString().replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
 }
