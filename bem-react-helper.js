@@ -4,8 +4,8 @@ module.exports = b;
 export default b;
 
 function b(name, props = {}, defaultMods = {}) {
-  const { mix, mods = {} } = props;
-  const result = [name];
+  let result = [name];
+  const { mix = [], mods = {} } = props;
   const addMod = (key, value) => {
     const mod = [name, camelToKebab(key)];
 
@@ -29,11 +29,7 @@ function b(name, props = {}, defaultMods = {}) {
   });
 
   if (mix) {
-    if (Array.isArray(mix)) {
-      mix.forEach(item => { result.push(item); });
-    } else {
-      result.push(mix);
-    }
+    result = result.concat(mix);
   }
 
   return result.join(' ');
