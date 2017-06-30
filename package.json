@@ -4,7 +4,12 @@
   "description": "Allows you to easily manage BEM mods & mixes in React",
   "main": "index.js",
   "scripts": {
+    "build": "babel bem-react-helper.js -o index.js",
     "test": "jasmine"
+  },
+  "babel": {
+    "presets": ["env"],
+    "plugins": ["transform-object-rest-spread"]
   },
   "repository": {
     "type": "git",
@@ -27,6 +32,9 @@
   },
   "homepage": "https://github.com/igoradamenko/bem-react-helper#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
     "jasmine": "^2.5.3"
   },
   "files": [
