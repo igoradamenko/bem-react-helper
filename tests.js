@@ -69,7 +69,7 @@ describe('bem-react-helper', function() {
     }, {
       mod2: 'def-val',
       mod3: true
-    })).toEqual('block block_mod1 block_mod2_def-val block_mod3 block2 block3');
+    })).toEqual('block block_mod2_def-val block_mod3 block_mod1 block2 block3');
   });
 
   it('should return block name with mods & mix & default mods when all of them are given and mods have keys from default mods', function() {
@@ -82,7 +82,7 @@ describe('bem-react-helper', function() {
     }, {
       mod2: 'def-val',
       mod3: true
-    })).toEqual('block block_mod1 block_mod2_custom-val block_mod3 block2 block3');
+    })).toEqual('block block_mod3 block_mod1 block_mod2_custom-val block2 block3');
   });
 
   it('should return elem name with mods & mix & default mods when all of them are given', function() {
@@ -95,7 +95,7 @@ describe('bem-react-helper', function() {
     }, {
       mod2: 'def-val',
       mod3: true
-    })).toEqual('block__elem block__elem_mod1 block__elem_mod2_custom-val block__elem_mod3 block2 block3');
+    })).toEqual('block__elem block__elem_mod3 block__elem_mod1 block__elem_mod2_custom-val block2 block3');
   });
 
   it('should return block name with mods when some of them has number values or keys', function() {
@@ -106,6 +106,13 @@ describe('bem-react-helper', function() {
       }
     }, {
       3: 4
-    })).toEqual('block block_1 block_3_4 block_mod_2');
+    })).toEqual('block block_3_4 block_1 block_mod_2');
+  });
+
+  it('should set modifier if defaultMods set & mods object is same (should not change original mods object)', function () {
+    var mods = {};
+
+    expect(b('block', { mods: mods }, { open: false })).toEqual('block');
+    expect(b('block', { mods: mods }, { open: true })).toEqual('block block_open');
   });
 });

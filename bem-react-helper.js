@@ -6,20 +6,25 @@ export default b;
 function b(name, props = {}, defaultMods = {}) {
   const { mix, mods = {} } = props;
   const result = [name];
+  const addMod = (key, value) => {
+    const mod = [name, camelToKebab(key)];
+
+    if (typeof value !== 'boolean') {
+      mod.push(camelToKebab(value));
+    }
+
+    result.push(mod.join('_'));
+  };
 
   Object.keys(defaultMods).forEach(key => {
-    if (!mods.hasOwnProperty(key)) mods[key] = defaultMods[key];
+    if (!mods.hasOwnProperty(key) && defaultMods[key]) {
+      addMod(key, defaultMods[key]);
+    }
   });
 
   Object.keys(mods).forEach(key => {
     if (mods[key]) {
-      const mod = [name, camelToKebab(key)];
-
-      if (typeof mods[key] !== 'boolean') {
-        mod.push(camelToKebab(mods[key]));
-      }
-
-      result.push(mod.join('_'));
+      addMod(key, mods[key]);
     }
   });
 
