@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel bem-react-helper.js -o index.js",
-    "test": "jasmine"
+    "test": "jasmine",
+    "prepublish": "npm run test && npm run build"
   },
   "babel": {
     "presets": ["env"],
