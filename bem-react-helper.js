@@ -1,5 +1,6 @@
 'use strict';
 
+module.exports = b;
 export default b;
 
 function b(name, props, defaultMods = {}) {
