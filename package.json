@@ -4,14 +4,19 @@
   "description": "Allows you to easily manage BEM mods & mixes in React",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --exec 'npm run test' --watch bem-react-helper.js --watch tests.js",
     "build": "babel bem-react-helper.js -o index.js",
     "pretest": "npm run build",
     "test": "jasmine",
     "prepublish": "npm run test && npm run build"
   },
   "babel": {
-    "presets": ["env"],
-    "plugins": ["transform-object-rest-spread"]
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
   },
   "repository": {
     "type": "git",
@@ -37,7 +42,8 @@
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.5.2",
-    "jasmine": "^2.5.3"
+    "jasmine": "^2.5.3",
+    "nodemon": "^1.11.0"
   },
   "files": [
     "index.js"
