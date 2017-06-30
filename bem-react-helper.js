@@ -3,7 +3,7 @@
 module.exports = b;
 export default b;
 
-function b(name, props, defaultMods = {}) {
+function b(name, props = {}, defaultMods = {}) {
   const { mix, mods = {} } = props;
   const result = [name];
 
