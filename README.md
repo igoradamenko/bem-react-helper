@@ -1,5 +1,7 @@
 # BEM React Helper
 
+[<img src="https://igoradamenko.com/funbox/gitbadge.svg" width="235" align="right">](http://funbox.ru/pages/vacancy.html)
+
 [![Travis](https://img.shields.io/travis/igoradamenko/bem-react-helper.svg)](https://travis-ci.org/igoradamenko/bem-react-helper)
 [![npm](https://img.shields.io/npm/v/bem-react-helper.svg)](https://www.npmjs.com/package/bem-react-helper)
 
