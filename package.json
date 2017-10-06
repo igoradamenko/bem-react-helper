@@ -8,7 +8,7 @@
     "build": "babel bem-react-helper.js -o index.js",
     "pretest": "npm run build",
     "test": "jasmine",
-    "prepublish": "npm run test && npm run build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "babel": {
     "presets": [
