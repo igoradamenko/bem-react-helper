@@ -88,8 +88,7 @@ export default class Block extends Component {
     return (
       <div className={b('block', this.props, { size: s })} {...rest}>
         {
-          mods.type === 'primary' &&
-          (
+          mods.type === 'primary' && (
             <span className="block__star">★</span>
           )
         }
@@ -108,6 +107,6 @@ Why didn't I use
 [hel](https://github.com/pocotan001/bem-classnames)[pers](https://github.com/marcohamersma/react-bem-helper)
 and created yet another one?
 They bloat code but don't do anything useful.
-Also I believe that write plain classes is faster than use any wrappers around it.
+Also I believe that to write plain classes is faster than to use any wrappers around it.
 
-So this helper solves just one problem (the main, I think) — it removes conditions for modifiers and mixes in block's declaration.
+So this helper solves just one problem (the main) — it removes conditions for modifiers and mixes in block's declaration.
