@@ -58,7 +58,7 @@ import b from 'bem-react-helper';
 export default class Block extends Component {
   render() {
     return (
-      <div className={b('block', this.props, { size: s })} />
+      <div className={b('block', this.props, { size: 's' })} />
     );
   }
 }
@@ -86,7 +86,7 @@ export default class Block extends Component {
     const { mix, mods = {}, ...rest } = this.props;
     
     return (
-      <div className={b('block', this.props, { size: s })} {...rest}>
+      <div className={b('block', this.props, { size: 's' })} {...rest}>
         {
           mods.type === 'primary' && (
             <span className="block__star">★</span>
