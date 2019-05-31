@@ -58,7 +58,7 @@ This helper was built to solve the problem described above. It's created around 
 <Block mods={{ visible: true, type: 'primary', size: 'xxl' }} mix="block2__elem"/>
 ```
 
-As you may understand, now it's quite easy to preprocess modifiers, change them, replace with default values, etc. And that's exactly what the helper does. When developer use the helper, component code usually looks like this:
+As you may understand, now it's quite easy to preprocess modifiers, change them, replace with default values, etc. And that's exactly what the helper does. When developer uses the helper, component code usually looks like this:
 
 ```jsx
 import b from 'bem-react-helper';
@@ -87,7 +87,7 @@ Helper is a pretty smart guy. For example, you can pass mix as an array if you n
 <Block mods={{ visible: true, type: 'primary', size: 'xxl' }} mix={['block2__elem', 'block3']}/>
 ```
 
-Or you can use camelCased modifiers that will be converted to usual for CSS kebab-case. 
+Or you can use camelCased modifiers that will be converted to regular for CSS kebab-case. 
 For example, let's assume that we use `Block` component described above, but with these modifiers:
 
 ```jsx
