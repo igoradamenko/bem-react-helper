@@ -47,5 +47,6 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "types": "bem-react-helper.d.ts"
 }
