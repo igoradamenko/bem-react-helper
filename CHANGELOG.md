@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.2. (12.11.2020)
+
+Made `defaultMods` type `Partial`, to prevent wrong type asserts.
+
+
 ## 1.2.1 (20.07.2020)
 
 Included index.d.ts into the package.
